@@ -22,7 +22,7 @@ body{
 .container button{
     width:20%;
     outline:none;
-    border:2px solid gray;
+    border: none;
     cursor: pointer;
     transform-style: preserve-3d;
     position: relative;
@@ -43,6 +43,7 @@ body{
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
+    border:2px solid gray;
 }
 .luffy .back-face{
     position: absolute;
@@ -55,12 +56,22 @@ body{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
 .front-face:hover{
     filter: grayscale(0);
 }
 button:focus{
     transform: rotateY(180deg);
+}
+.luffy:focus{
+    box-shadow:0 0 20px 1px white;
+}
+.zoro:focus{
+    box-shadow:0 0 20px 1px rgb(238, 4, 250);
+}
+.sanji:focus{
+    box-shadow:0 0 20px 1px rgb(249, 76, 2);
 }
 .zoro .front-face{
     position: absolute;
@@ -72,6 +83,7 @@ button:focus{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
 .zoro .back-face{
     position: absolute;
@@ -84,6 +96,7 @@ button:focus{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
 .sanji .front-face{
     position: absolute;
@@ -95,6 +108,7 @@ button:focus{
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
 .sanji .back-face{
     position: absolute;
@@ -107,4 +121,5 @@ button:focus{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid gray;
 }
