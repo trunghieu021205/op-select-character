@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    width:100%;
+    height:70vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container button{
+    width:20%;
+    outline:none;
+    border:2px solid gray;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    position: relative;
+    transition:1s linear;
+}
+.front-face{
+    transition: 0.3s ease-in;
+    filter: grayscale(100);
+}
+
+.luffy .front-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:70vh;
+    backface-visibility: hidden;
+    background-image: url(img/Monkey_D._Luffy.webp);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.luffy .back-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:70vh;
+    backface-visibility: hidden;
+    background-image: url(img/799aeb4038a89b85afa4411c7e4c668c.jpg);
+    transform: rotateY(180deg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.front-face:hover{
+    filter: grayscale(0);
+}
+button:focus{
+    transform: rotateY(180deg);
+}
+.zoro .front-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:70vh;
+    backface-visibility: hidden;
+    background-image: url(img/roronoa-zoro-641x1024.webp);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.zoro .back-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:70vh;
+    backface-visibility: hidden;
+    background-image: url(img/E9455nCWUAkzN7m.jpg);
+    transform: rotateY(180deg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sanji .front-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 70vh;
+    backface-visibility: hidden;
+    background-image: url(img/op_sanji.webp);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sanji .back-face{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:70vh;
+    backface-visibility: hidden;
+    background-image: url(img/hinh-anh-sanji-ngau-manh-me.jpg);
+    transform: rotateY(180deg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
