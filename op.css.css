@@ -62,16 +62,39 @@ body{
     filter: grayscale(0);
 }
 button:focus{
-    transform: rotateY(180deg);
+    animation: flip 3s ease-in-out forwards;
+}
+@keyframes flip {
+    0%{
+        transform: rotateY(0);
+    }
+    10%{
+        transform: rotateY(180deg);
+    }
+    25%{
+        transform: rotateY(360deg);
+    }
+    45%{
+        transform: rotateY(180deg);
+    }
+    70%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
 }
 .luffy:focus{
-    box-shadow:0 0 20px 1px white;
+    box-shadow:0 0 50px 1px rgba(229, 228, 228, 0.986),
+    0 0 1px 10px rgba(66, 66, 66, 0.08);
 }
 .zoro:focus{
-    box-shadow:0 0 20px 1px rgb(238, 4, 250);
+    box-shadow:0 0 50px 1px rgb(238, 4, 250),
+    0 0 1px 10px rgba(66, 66, 66, 0.08);
 }
 .sanji:focus{
-    box-shadow:0 0 20px 1px rgb(249, 76, 2);
+    box-shadow:0 0 50px 1px rgb(249, 76, 2),
+    0 0 1px 10px rgba(66, 66, 66, 0.08);
 }
 .zoro .front-face{
     position: absolute;
